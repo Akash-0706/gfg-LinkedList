@@ -1,0 +1,17 @@
+## java solution
+
+class GfG
+{
+    boolean isCircular(Node head)
+    {
+	// Your code here
+	Node curr = head;
+	while(curr.next!=head){
+	    if(curr.next == null)
+	        return false;
+	        curr= curr.next;
+	}
+	return true;
+	
+    }
+}
