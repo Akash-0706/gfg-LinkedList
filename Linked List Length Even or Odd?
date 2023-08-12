@@ -1,0 +1,16 @@
+## java solution
+
+class GFG
+{
+	int isLengthEvenorOdd(Node head1)
+	{
+	    //Add your code here.
+	    int length = 0;
+	    while(head1 !=null){
+	        length++;
+	        head1 = head1.next;
+	        
+	    }
+	    return length%2;
+	}
+}
