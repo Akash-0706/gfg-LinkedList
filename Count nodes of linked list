@@ -1,0 +1,23 @@
+#java solution
+
+class Solution
+{
+    //Function to count nodes of a linked list.
+    public static int getCount(Node head)
+    {
+        
+        //Code here
+          int count = 0;
+        Node curr = head;
+        if(head == null){
+            return -1;
+        }
+        while(curr.next!=null){
+            
+            curr= curr.next;
+            count++;
+        }
+        return count+1;
+    }
+}
+    
